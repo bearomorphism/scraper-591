@@ -33,6 +33,12 @@ cz commit
 - `pytesseract` – Python wrapper for Tesseract.
 - `Pillow` – for image handling in Python.
 
+## 📸 Workflow
+
+1. **Navigate to Listing Page** using Playwright.
+2. **Take Full Page Screenshot** of filtered results.
+3. **Run OCR** on the screenshot to extract listing text.
+
 ### Why not use Selenium/BeautifulSoup/...?
 
 I've tried... The site blocks it.
@@ -40,12 +46,6 @@ I've tried... The site blocks it.
 ### Why not just use the data from `page.content()`?
 
 You can try printing it. All the useful data seems to be encoded in the HTML content and cannot be directly used.
-
-## 📸 Workflow
-
-1. **Navigate to Listing Page** using Playwright.
-2. **Take Full Page Screenshot** of filtered results.
-3. **Run OCR** on the screenshot to extract listing text.
 
 ## 💻 Prerequisites
 
