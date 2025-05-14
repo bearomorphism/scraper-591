@@ -4,6 +4,10 @@
 
 This project automates scraping rental listings from [591租屋網](https://rent.591.com.tw) using Playwright, takes a screenshot, and extracts listing text using Tesseract OCR.
 
+> ⚠️ **Note:** This site uses obfuscated or dynamically generated HTML content, making it difficult to scrape using static requests. I'm using Playwright to load the page in a headless browser and capture the content. However, developer tools cannot be used directly — opening them triggers client-side scripts that redirect the page back to the previous view. As a result, automated tools like Playwright are necessary to bypass these restrictions and extract the data.
+>
+> ⚠️ **Warning:** This project is a **work in progress** and the code is not yet optimized.
+
 ## 🔧 Tools Used
 
 - [Playwright](https://playwright.dev/) – for automating browser and taking a screenshot.
