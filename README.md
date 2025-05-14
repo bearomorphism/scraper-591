@@ -1,5 +1,7 @@
 # 🏡 591 Rental Listings Scraper with OCR Analysis
 
+[ChatGPT discussion thread](https://chatgpt.com/share/6824cc3e-b164-8010-a812-7a775e3995d3)
+
 This project automates scraping rental listings from [591租屋網](https://rent.591.com.tw) using Playwright, takes a screenshot, and extracts listing text using Tesseract OCR.
 
 ## 🔧 Tools Used
