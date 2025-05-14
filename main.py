@@ -20,6 +20,7 @@ with sync_playwright() as p:
     page.goto(
         "https://rent.591.com.tw/list?region=1&kind=1&layout=4,3&other=pet&price=30000_40000"
     )
+    # TODO: goto next page and take more screenshots
 
     print("Taking screenshot...")
     page.screenshot(path=data_dir / "listing.png", full_page=True)
@@ -33,4 +34,5 @@ with sync_playwright() as p:
         f.write(text)
 
     # TODO: what should we do with the text?
+    # TODO: data cleaning
     print("Done")
