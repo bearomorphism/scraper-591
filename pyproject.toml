@@ -1,0 +1,15 @@
+[project]
+name = "scraper-591"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "beautifulsoup4>=4.13.4",
+    "pandas>=2.2.3",
+    "pillow>=11.2.1",
+    "playwright>=1.52.0",
+    "pytesseract>=0.3.13",
+    "requests>=2.32.3",
+    "ruff>=0.11.9",
+]
