@@ -8,6 +8,14 @@ This project automates scraping rental listings from [591租屋網](https://rent
 >
 > ⚠️ **Warning:** This project is a **work in progress** and the code is not yet optimized.
 
+## 🤝 Contributing & Feature Requests
+
+Contributions are welcome! Whether it's fixing a bug, improving documentation, or adding new functionality — feel free to open a pull request.
+
+Got ideas for new features or improvements? Please open an issue and share your thoughts! Even simple suggestions or feedback are greatly appreciated.
+
+> Let's build something useful together. 💡
+
 ## 🔧 Tools Used
 
 - [Playwright](https://playwright.dev/) – for automating browser and taking a screenshot.
