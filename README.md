@@ -16,6 +16,16 @@ Got ideas for new features or improvements? Please open an issue and share your 
 
 > Let's build something useful together. 💡
 
+### Prerequisites for Contributing
+
+We use conventional commits for the changelog.
+
+Please use [commitizen](https://commitizen-tools.github.io/commitizen/) to commit your changes.
+
+```bash
+cz commit
+```
+
 ## 🔧 Tools Used
 
 - [Playwright](https://playwright.dev/) – for automating browser and taking a screenshot.
