@@ -14,6 +14,9 @@ with sync_playwright() as p:
     print("Launching browser...")
     browser = p.chromium.launch()
     page = browser.new_page()
+
+    # TODO: user can fill in the url with filters
+    # we can probably have some config file for the filters
     page.goto(
         "https://rent.591.com.tw/list?region=1&kind=1&layout=4,3&other=pet&price=30000_40000"
     )
@@ -28,4 +31,6 @@ with sync_playwright() as p:
     text = pytesseract.image_to_string(img, lang="chi_tra")  # For Traditional Chinese
     with open(data_dir / "listing.txt", "w") as f:
         f.write(text)
+
+    # TODO: what should we do with the text?
     print("Done")
