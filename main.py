@@ -18,7 +18,8 @@ with sync_playwright() as p:
     # TODO: user can fill in the url with filters
     # we can probably have some config file for the filters
     page.goto(
-        "https://rent.591.com.tw/list?region=1&kind=1&layout=4,3&other=pet&price=30000_40000"
+        "https://rent.591.com.tw/list?region=1&kind=1&layout=4,3&other=pet&price=30000_40000",
+        wait_until="networkidle",  # we need this to get the price of the listing
     )
     # TODO: goto next page and take more screenshots
 
